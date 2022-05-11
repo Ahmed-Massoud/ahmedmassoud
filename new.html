@@ -1,0 +1,224 @@
+<style>
+  @import url('https://fonts.googleapis.com/css?family=VT323');
+  :root {
+  --bg-color: #010;
+  --bg-color-faded: rgba(50, 70, 50, 0.5);
+  --text-color: rgba(125, 213, 130, 0.5);
+  --text-shadow-color: rgba(125, 213, 130, 1);
+}
+body {
+  background: var(--bg-color);
+}
+body,
+h1,
+p,
+a,
+summary {
+  font-size: 5vw;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+  font-family: "VT323", monospace;
+  transform: skewx(0.1deg);
+  color: var(--text-color);
+  text-shadow: 0 0 2px var(--text-shadow-color),
+    0 0 12px var(--text-shadow-color);
+}
+summary,
+a {
+  list-style: none;
+  cursor: pointer;
+  padding: 0 1ch;
+  text-decoration: none;
+  transition: all 0.25s ease-in-out;
+}
+ul {
+  margin: 0 0 1em;
+  list-style: none;
+
+}
+ul li::before {
+  content: "¤ ";
+}
+summary:before {
+}
+ul li::before {
+  content: "¤ ";
+}
+summary:before {
+  content: "> ";
+}
+a:before {
+  content: "«";
+}
+a:after {
+  content: "»";
+}
+summary:hover,
+a:hover {
+  color: var(--bg-color);
+  background: var(--text-shadow-color);
+  color: var(--bg-color-faded);
+  box-shadow: 0 0 2px var(--text-shadow-color),
+    0 0 12px var(--text-shadow-color);
+  text-shadow: 0 0 2px var(--bg-color), 0 0 12px var(--bg-color);
+}
+section {
+  padding-bottom: 1em;
+}
+.screen {
+  margin: auto;
+  width: 40ch;
+  //white-space: pre;
+  animation: glow 7s infinite alternate ease-in;
+}
+
+.screen > p {
+  margin: 0;
+  padding-bottom:
+}
+ul li::before {
+  content: "¤ ";
+}
+summary:before {
+  content: "> ";
+}
+a:before {
+  content: "«";
+}
+a:after {
+  content: "»";
+}
+summary:hover,
+a:hover {
+  color: var(--bg-color);
+  background: var(--text-shadow-color);
+  color: var(--bg-color-faded);
+  box-shadow: 0 0 2px var(--text-shadow-color),
+    0 0 12px var(--text-shadow-color);
+  text-shadow: 0 0 2px var(--bg-color), 0 0 12px var(--bg-color);
+}
+section {
+  padding-bottom: 1em;
+}
+.screen {
+  margin: auto;
+  width: 40ch;
+  //white-space: pre;
+  animation: glow 7s infinite alternate ease-in;
+  
+}
+.center {
+  text-align: center;
+}
+.border:before {
+  content: "** ";
+  float: left;
+}
+.border:after {
+  content: " **";
+  float: right;
+}
+.pulse {
+  animation: pulse 1.5s ease-in;
+  animation-iteration-count: infinite;
+  opacity: 1;
+}
+@keyframes pulse {
+  40% {
+    opacity: 1;
+    
+  }
+  80% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 0.1;
+  }
+  85% {
+    opacity: 1;
+  }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 2px var(--text-shadow-color),
+      0 0 12px var(--text-shadow-color);
+  }
+  to {
+    text-shadow: 0 0 1px var(--text-shadow-color),
+      0 0 6px var(--text-shadow-color);
+  }
+}
+
+</style>
+
+<div class="screen">
+  <p class="no-break">****************************************</p>
+  <h1 class="border center"><a href="https://www.codepen.io/ahmed-massoud">Ahmed Massoud</a></h1>
+  <p>****************************************</p>
+  <p>My name is Ahmed Massoud . I love learning and creating new things.</p>
+  <ul>
+    <li>My career is website.</li>
+    <li>My job is frontend developer.</li>
+    <li>My love is my job.</li>
+</ul>
+  </ul>
+  <section>
+    <p class="no-break">Education</p>
+    <p class="no-break">¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯</p>
+    <details>
+      <summary>In middle education</summary>
+      <ul>
+          <li>In the third preparatory grade</li>
+      </ul>
+    </details>
+    <details>
+      <summary>frontend developer language</summary>
+      <p>
+      <ul>
+           <li>Html</li>
+        <li>Css</li>
+        <li>JavaScript</>
+      </ul>
+      </p>
+    </details>
+    <details>
+          
+          
+          <summary>design and edit photos</summary>
+      <ul>
+        <li>Photoshop and some programs another</li>
+      </ul>
+    </details>
+  </section>
+  <section>
+    <p class="no-break">Expertise</p>
+    <p class="no-break">¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯</p>
+<summary>one Year html and css</summary>
+<summary>two year design</summary>
+  </section>
+<section>
+    <p class="no-break">A work</p>
+    <p class="no-break">¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯</p>
+    <summary>free work
+with myself </summary>
+
+ </section>
+  <section>
+    <p class="no-break">Contact Information</p>
+<p class="no-break">¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯</p>
+    <details>
+      <summary>Facebook</summary>
+      <p>
+        <a href="https://www.facebook.com/ahmed1massoud">https://www.facebook.com/ahmed1massoud</a>
+      </p>
+    </details><details>
+      <summary>Instagram</summary>
+      <p><a href="https://www.instagram.com/ahmedmassoud11/?funlid=U3eCRc5UdMUapghB">https://www.instagram.com/ahmedmassoud11/?funlid=U3eCRc5UdMUapghB</a>
+      </p>
+    </details>
+  </section>
+<p>****************************************</p>
+
+</div>
